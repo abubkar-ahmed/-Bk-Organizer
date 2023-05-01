@@ -1,0 +1,23 @@
+@import '../var.scss';
+aside{
+    height: 100vh;
+    border-right: 1px solid $color-7;
+    width: 100%;
+    max-width: 350px;
+}
+
+@media (max-width:768px) {
+    aside{
+        position: fixed;
+        min-width: 100%;
+        background-color: #00000048;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(5px);
+        .state-control-div{
+            width: 100%;
+            height: 100%;
+            // background-color: red;
+        }
+    }
+}

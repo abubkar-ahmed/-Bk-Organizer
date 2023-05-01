@@ -1,0 +1,52 @@
+@import '../var.scss';
+.logo{
+    width: 100%;
+    max-width: 350px;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border: none;
+    border-bottom: 1px solid $color-7;
+    color: $color-2;    
+    .spans{
+        min-width: 30px;
+        min-height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        gap: 0.2rem;
+        span{
+            width: 5px;
+            height: 25px;
+            border: 1px solid $color-3;
+            border-radius: 0.5rem;
+        }
+        span:nth-child(1) {
+            background-color: $color-2;
+            height: 15px;
+        }
+        span:nth-child(2) {
+            background-color: $color-3;
+            height: 20px;
+        }
+        span:nth-child(3) {
+            background-color: $color-4;
+            height: 25;
+        }
+    }
+    div{
+        font-size: 1.35rem;
+        font-weight: 700;
+    }    
+}
+
+@media (max-width:768px) {
+    .logo{
+        width: fit-content;
+        .logo-name{
+            display: none;
+        }
+    }
+}
