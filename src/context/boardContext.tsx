@@ -338,7 +338,7 @@ const BoardContextProvider = ({ children }: AuthContextProviderProps) => {
   // If User Is Logged In
 
   const axiosPrivate = axios.create({
-    baseURL : 'http://localhost:3000/',
+    baseURL : 'https://bk-organizer.onrender.com/',
     headers : {
         'Authorization' : `Bearer ${user?.accessToken}`
     },

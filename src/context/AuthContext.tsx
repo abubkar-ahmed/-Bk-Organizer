@@ -12,7 +12,6 @@ type AuthContextType = {
   isLoggedIn: boolean;
   loadingRefresh:boolean;
   loadingAuth : boolean ;
-  // setLoaginAuth : React.Dispatch<React.SetStateAction<boolean>>;
   user: User;
   login: (email: string, pwd: string) => Promise<{ status: boolean; message: string }>;
   register: (email: string, userName: string, pwd: string, rPwd: string) => Promise<{ status: boolean; message: string }>;
