@@ -25,9 +25,11 @@ function Main() {
                     </div>
                 )
             })}
-        <div className="new-col" onClick={() => setShowNewColumn(prev => !prev)}>
-            + New Column
-        </div>
+        {activeBoard?.name && (
+            <div className="new-col" onClick={() => setShowNewColumn(prev => !prev)}>
+                + New Column
+            </div>
+        )}
         {showNewColumn && <NewColumn setShowNewColumn={setShowNewColumn}/>}
     </ScrollContainer> 
   )

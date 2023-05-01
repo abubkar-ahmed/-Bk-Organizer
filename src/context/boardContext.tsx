@@ -358,7 +358,7 @@ const BoardContextProvider = ({ children }: AuthContextProviderProps) => {
         setActiveBoard(response?.data?.boards[0]);
       }
       setBoardLoadin(false)
-      
+      console.log(response)
       return {
         status : true,
       }

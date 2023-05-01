@@ -87,8 +87,6 @@ function NewColumn({setShowNewColumn} : NewColumnProps) {
         }
 
     }   
-    console.log(col)
-    console.log(newCol)
   return (
     <div className="back-drop-container" >
         <div className="control-div" onClick={() => setShowNewColumn(false)}></div>

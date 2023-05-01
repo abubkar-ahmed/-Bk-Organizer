@@ -65,9 +65,14 @@ function Nav() {
                     <ArrowSvg/>
                 </h1>
             )
-        ) : (
+        ) : screenWidth > 768 ? (
             <h1>
                 No Board Found
+            </h1>
+        ) : (
+            <h1 onClick={() => setShowAsideMain(e => !e)}>
+                No Board Found
+                <ArrowSvg/>
             </h1>
         )}
         {activeBoard?.name && (
