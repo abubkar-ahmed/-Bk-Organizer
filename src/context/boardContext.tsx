@@ -388,6 +388,7 @@ const BoardContextProvider = ({ children }: AuthContextProviderProps) => {
       }
     }catch(err : any){
       setBoardLoadin(false)
+      console.log(err)
       return {
         status : false,
         message : err?.response?.data.message ? err?.response?.data.message : 'Somthing Went Wrong!'
